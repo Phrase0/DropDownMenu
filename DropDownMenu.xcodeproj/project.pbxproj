@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F85223EC295C8E4100ED5A32 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85223EB295C8E4100ED5A32 /* MyNavigationController.swift */; };
 		F8BE4D2A295C7B0D000434AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE4D29295C7B0D000434AC /* AppDelegate.swift */; };
 		F8BE4D2C295C7B0D000434AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE4D2B295C7B0D000434AC /* SceneDelegate.swift */; };
 		F8BE4D2E295C7B0D000434AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BE4D2D295C7B0D000434AC /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F85223EB295C8E4100ED5A32 /* MyNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
 		F8BE4D26295C7B0D000434AC /* DropDownMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropDownMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BE4D29295C7B0D000434AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8BE4D2B295C7B0D000434AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				F8BE4D2B295C7B0D000434AC /* SceneDelegate.swift */,
 				F8BE4D2D295C7B0D000434AC /* ViewController.swift */,
 				F8BE4D2F295C7B0D000434AC /* Main.storyboard */,
+				F85223EB295C8E4100ED5A32 /* MyNavigationController.swift */,
 				F8BE4D35295C7B0D000434AC /* Assets.xcassets */,
 				F8BE4D37295C7B0D000434AC /* LaunchScreen.storyboard */,
 				F8BE4D3A295C7B0D000434AC /* Info.plist */,
@@ -144,6 +147,7 @@
 				F8BE4D2E295C7B0D000434AC /* ViewController.swift in Sources */,
 				F8BE4D2A295C7B0D000434AC /* AppDelegate.swift in Sources */,
 				F8BE4D2C295C7B0D000434AC /* SceneDelegate.swift in Sources */,
+				F85223EC295C8E4100ED5A32 /* MyNavigationController.swift in Sources */,
 				F8BE4D34295C7B0D000434AC /* DropDownMenu.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

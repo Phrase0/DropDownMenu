@@ -1,24 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nv5-ar-9ec">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DropDownMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fbc-fZ-U75">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dik-GV-tnv">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="g9H-rU-d0a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="GAME"/>
+                                        <connections>
+                                            <action selector="startSelect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJC-nH-N5x"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jNU-Z4-loO">
+                                        <rect key="frame" x="0.0" y="80" width="390" height="764"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vww-JR-n9L">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="191"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="zelda" image="zelda"/>
+                                                <connections>
+                                                    <action selector="optionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GWT-to-6BD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaH-gd-PRw">
+                                                <rect key="frame" x="0.0" y="191" width="390" height="191"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="mario" image="mario"/>
+                                                <connections>
+                                                    <action selector="optionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ja8-hM-ODI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJP-3o-zgZ">
+                                                <rect key="frame" x="0.0" y="382" width="390" height="191"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="clashRoyale" image="clashRoyale"/>
+                                                <connections>
+                                                    <action selector="optionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSA-hT-fcu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwu-Bf-wwF">
+                                                <rect key="frame" x="0.0" y="573" width="390" height="191"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="lineageM" image="lineageM"/>
+                                                <connections>
+                                                    <action selector="optionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="meO-hG-bB3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Vww-JR-n9L" firstAttribute="leading" secondItem="jNU-Z4-loO" secondAttribute="leading" id="3OI-er-CMx"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vww-JR-n9L" secondAttribute="trailing" id="5ya-Wf-OIa"/>
+                                            <constraint firstItem="mJP-3o-zgZ" firstAttribute="leading" secondItem="jNU-Z4-loO" secondAttribute="leading" id="7hA-at-Xho"/>
+                                            <constraint firstItem="Wwu-Bf-wwF" firstAttribute="height" secondItem="jNU-Z4-loO" secondAttribute="height" multiplier="0.25" id="9GX-5o-LcL"/>
+                                            <constraint firstAttribute="trailing" secondItem="mJP-3o-zgZ" secondAttribute="trailing" id="FX1-Qk-uvJ"/>
+                                            <constraint firstItem="Wwu-Bf-wwF" firstAttribute="leading" secondItem="jNU-Z4-loO" secondAttribute="leading" id="K00-U8-e9W"/>
+                                            <constraint firstItem="vaH-gd-PRw" firstAttribute="leading" secondItem="jNU-Z4-loO" secondAttribute="leading" id="KOE-Vj-yof"/>
+                                            <constraint firstItem="Vww-JR-n9L" firstAttribute="height" secondItem="jNU-Z4-loO" secondAttribute="height" multiplier="0.25" id="Mdt-sm-E10"/>
+                                            <constraint firstItem="vaH-gd-PRw" firstAttribute="height" secondItem="jNU-Z4-loO" secondAttribute="height" multiplier="0.25" id="QTs-g8-TL4"/>
+                                            <constraint firstItem="mJP-3o-zgZ" firstAttribute="height" secondItem="jNU-Z4-loO" secondAttribute="height" multiplier="0.25" id="aqt-dz-iio"/>
+                                            <constraint firstAttribute="trailing" secondItem="vaH-gd-PRw" secondAttribute="trailing" id="kFS-R1-81U"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wwu-Bf-wwF" secondAttribute="trailing" id="ouM-6v-enN"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fbc-fZ-U75" secondAttribute="bottom" id="Flp-eg-Abo"/>
+                            <constraint firstItem="fbc-fZ-U75" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Whh-Zb-S1l"/>
+                            <constraint firstItem="fbc-fZ-U75" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XXX-bS-0Cp"/>
+                            <constraint firstAttribute="trailing" secondItem="fbc-fZ-U75" secondAttribute="trailing" id="Ye4-xw-77E"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gL9-X2-c6o"/>
+                    <connections>
+                        <outletCollection property="options" destination="Vww-JR-n9L" collectionClass="NSMutableArray" id="dOR-ds-LjE"/>
+                        <outletCollection property="options" destination="vaH-gd-PRw" collectionClass="NSMutableArray" id="ajA-2j-kDe"/>
+                        <outletCollection property="options" destination="mJP-3o-zgZ" collectionClass="NSMutableArray" id="OYn-zH-V6o"/>
+                        <outletCollection property="options" destination="Wwu-Bf-wwF" collectionClass="NSMutableArray" id="uod-er-ZHG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="433.84615384615381" y="-44.7867298578199"/>
+        </scene>
+        <!--My Navigation Controller-->
+        <scene sceneID="ifI-Vs-H9o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nv5-ar-9ec" customClass="MyNavigationController" customModule="DropDownMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HqW-OQ-7ks">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Kdt-RH-WNz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLz-Yt-TlD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-232" y="-45"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clashRoyale" width="1232" height="720"/>
+        <image name="lineageM" width="1066" height="588"/>
+        <image name="mario" width="924" height="606"/>
+        <image name="zelda" width="1276" height="674"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
